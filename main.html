@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./CSS/style.css">
+    <script src="https://kit.fontawesome.com/2d62f67ec1.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="div">
+        <header>
+            <a href="./mypage.html"><img src="./IMG/사람 아이콘png" alt="사람 아이콘"></a>
+            <div class="my_chip">
+                <a href="/management.html"><img src="./IMG/link-1.png" alt=""></a>
+            </div>
+        </header>
+
+        <nav>
+            <p><a class="profile_name"></a>님의 목표 배출일까지,<br>
+                3일 남았어요.</p>
+        </nav>
+
+        <section>
+            <!-- 동그라미 -->
+            <a href="./unlock.html" class="chip-circle">
+                <img src="./IMG/닫힌 자물쇠.png" alt="자물쇠 아이콘">
+                <p>My Chip</p>
+                <b class="coin_count">0</b>
+            </a>
+
+            <img class="red-arrow" src="./IMG/빨간 화살표.png" alt="">
+            <p>이곳을 터치해 굿유를 여세요</p>
+        </section>
+
+
+        <footer>
+            <div class="mySlides fade">
+                <p>과일 씨는<br>
+                    <b>일반쓰레기</b>인거<br>
+                    알고계시죠?
+                </p>
+                <img src="./IMG/perspective_matte.png">
+            </div>
+
+            <div class="mySlides fade">
+                <p>생선 가시는<br>
+                    <b>일반쓰레기</b>인거<br>
+                    알고계시죠?
+                </p>
+                <img src="./IMG/물고기png">
+            </div>
+
+            <div class="mySlides fade">
+                <p>뼈는<br>
+                    <b>일반쓰레기</b>인거<br>
+                    알고계시죠?
+                </p>
+                <img src="./IMG/bone.png">
+            </div>
+        </footer>
+
+        <br>
+
+        <div style="text-align:center">
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+        </div>
+    </div>
+
+    <script>
+        var slideIndex = 0;
+        showSlides();
+
+        function showSlides() {
+            var i;
+            var slides = document.getElementsByClassName("mySlides");
+            var dots = document.getElementsByClassName("dot");
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            slideIndex++;
+            if (slideIndex > slides.length) { slideIndex = 1 };
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex - 1].style.display = "block";
+            dots[slideIndex - 1].className += " active";
+            setTimeout(showSlides, 2000);
+        }
+    </script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+    <!-- If you enabled Analytics in your project, add the Firebase SDK for Analytics -->
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-analytics.js"></script>
+    <!-- Add Firebase products that you want to use -->
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-firestore.js"></script>
+    <script src="/JS/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="https://cdn.iamport.kr/js/iamport.payment-1.1.5.js"></script>
+    <script src="/JS/firebase.js"></script>
+</body>
+
+</html>

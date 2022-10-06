@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mypage</title>
+    <link rel="stylesheet" href="./CSS/mypage.css">
+    <script src="https://kit.fontawesome.com/2d62f67ec1.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="div">
+
+        <!-- 알림창 -->
+        <div id="alert-bg" class="close">
+            <div id="alert">
+                <div class="text-box">
+                    <p>알림을 정말로 끄시겠습니까?</p>
+                    <p class="p">배출시간 알림을 받지 못합니다.</p>
+                </div>
+
+                <div class="a-text">
+                    <a href="#" onclick="ValAleart(true)">예</a>
+                    <a href="#" onclick="ValAleart(false)">아니요</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="white">
+            <!-- 제목 -->
+            <div class="mypage">
+                <a href="/main.html"><i class="fa-solid fa-angle-left"></i></a>
+                <h4>마이페이지</h4>
+            </div>
+
+            <!-- section -->
+            <div class="section">
+                <div class="flex-box">
+                    <p><a class="profile_name"></a>님, 반가워요 :)</p>
+                    <a href="./information.html">회원정보</a>
+                </div>
+
+                <hr>
+
+                <small>현재 보유 칩</small>
+
+                <div class="flex-box">
+                    <b class="coin_count">0</b>
+                    <a href="./chip.html">충전하기</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- 옵션 -->
+        <div class="white" id="option">
+            <div class="box">
+                <img src="./IMG/구매 아이콘.png" alt="아이콘">
+                <a href="./PaymentDetails.html">구매내역</a>
+            </div>
+
+            <hr>
+
+            <div class="box inbox">
+                <div class="wkdthdgk">
+                    <img style="width: 24px; height: 24px;" src="./IMG/알림설정 아이콘.png" alt="아이콘">
+                    <a href="#">알림설정</a>
+                </div>
+
+                <!-- on / off 버튼 -->
+                <label class="switch" onchange="ChangeAleart()   ">
+                    <input type="checkbox" checked id="checkInput">
+                    <span href="#" class="slider"></span>
+                </label>
+            </div>
+
+            <hr>
+
+            <div class="box">
+                <img style="width: 24px; height: 24px;" src="./IMG/설정 아이콘.png" alt="아이콘">
+                <a href="#">설정</a>
+            </div>
+
+            <hr>
+
+            <div class="box">
+                <img style="width: 24px; height: 24px;" src="./IMG/logout.png" alt="아이콘">
+                <a onclick="gLogOut()" id="logOut">로그아웃</a>
+            </div>
+        </div>
+    </div>
+    <script>
+        let alertBg = document.getElementById('alert-bg');
+        let input = document.getElementById('checkInput');
+        let alertBox = document.getElementById('alert');
+        let count = 0;
+
+        function ChangeAleart() {
+            if (count % 2 == 0) {
+                alertBg.classList.remove('close');
+                alertBox.classList.remove('show');
+            }
+            count++;
+        }
+
+        function ValAleart(e) {
+            if (e === true) {
+                alertBg.classList.add('close');
+            } else {
+                alertBg.classList.add('close');
+                input.checked = true;
+                count--;
+            }
+        }
+    </script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+    <!-- If you enabled Analytics in your project, add the Firebase SDK for Analytics -->
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-analytics.js"></script>
+    <!-- Add Firebase products that you want to use -->
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-firestore.js"></script>
+    <script src="/JS/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="https://cdn.iamport.kr/js/iamport.payment-1.1.5.js"></script>
+    <script src="/JS/firebase.js"></script>
+</body>
+
+</html>

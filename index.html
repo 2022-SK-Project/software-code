@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>로그인</title>
+    <link rel="stylesheet" href="./CSS/loginPage.css">
+    <script src="https://kit.fontawesome.com/2d62f67ec1.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="div">
+        <div class="text-box">
+            <h1>GOOD U</h1>
+            <p>쓰레기 칩 없는 손쉬운 쓰레기 배출</p>
+        </div>
+
+        <img class="basket" src="./IMG/Basket.png" alt="">
+        
+        <div class="login-box">
+            <a href="#" class="login" style="background-color: #fef01b;">
+                <img class="goole" src="./IMG/카카오톡.png" alt="">
+                <p>카카오톡 계정으로 계속하기</p>
+            </a>
+            <a href="#" class="login" style="background-color: #00C73C;">
+                <img class="goole" src="./IMG/네이버.png" alt="">
+                <p style="color: white;">네이버 계정으로 계속하기</p>
+            </a>
+            <a onclick="googleLogin()" class="login">
+                <img class="goole" src="./IMG/구글.png" alt="">
+                <p>구글 계정으로 계속하기</p>
+            </a>
+        </div>
+    </div>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+    <!-- If you enabled Analytics in your project, add the Firebase SDK for Analytics -->
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-analytics.js"></script>
+    <!-- Add Firebase products that you want to use -->
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-firestore.js"></script>
+    <script src="/JS/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="https://cdn.iamport.kr/js/iamport.payment-1.1.5.js"></script>
+    <script src="/JS/login.js"></script>
+</body>
+</html>

@@ -1,0 +1,56 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+body{
+    background-color: rgb(244, 244, 244);
+}
+.div{
+    width: 100%;
+    background-color: rgb(244, 244, 244);
+    text-align: center;
+}
+
+/* 글자 */
+.text-box > h1{
+    font-size: 40px;
+    padding-top: 99px;
+}
+.text-box > p{
+    font-size: 16px;
+}
+.basket{
+    width: 274px;
+    height: 276px;
+    margin-top: 54px;
+}
+
+/* 로그인 */
+.login-box{
+    margin-top: 20px;
+}
+.login{
+    width: 304px;
+    height: 40px;
+    border-radius: 5px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin: 10px auto 0 auto;
+}
+.login > img{
+    padding: 0 43px 0 15px;
+}
+.login > p{
+    font-size: 15px;
+    font-weight: bold;
+}
+.goole{
+    width: 27px;
+    height: 27px;
+}

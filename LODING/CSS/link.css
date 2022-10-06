@@ -1,0 +1,36 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+div {
+  width: 100%;
+  height: 100vh;
+  background-color: rgb(244, 244, 244);
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+img {
+  width: 172px;
+  height: 172px;
+  margin: 120px 0 17px 0;
+}
+p {
+  font-size: 18px;
+}
+div > button {
+  width: 150px;
+  height: 40px;
+  border-radius: 5px;
+  border: 0.5px solid darkblue;
+  background-color: rgb(244, 244, 244);
+  margin-top: 80px;
+  transition: all 0.5s;
+  /* box-shadow: 3px 3px 5px -2px gray; */
+}
+div > button:hover {
+  background-color: black;
+  color: white;
+}

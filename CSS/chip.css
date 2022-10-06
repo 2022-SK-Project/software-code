@@ -1,0 +1,83 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+/* top */
+.top {
+  width: 100%;
+  height: 24px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.top > i {
+  padding: 0 6px;
+  font-size: 13px;
+}
+.top > p {
+  padding-right: 5px;
+  font-size: 14px;
+}
+
+/* 마이페이지 */
+.mypage > a > i {
+  float: left;
+  margin: 5px 0 0 37px;
+}
+h4 {
+  font-size: 20px;
+  margin: 32px 37px 0 0;
+  text-align: center;
+}
+
+/* 칩 개수 부분 */
+.chip_box {
+  height: 160px;
+  margin-top: 47px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.chip_box > img {
+  width: 130px;
+  height: 130px;
+}
+.chip > p {
+  font-size: 22px;
+}
+.chip > b {
+  font-size: 40px;
+  padding-left: 25px;
+  color: #ff2121;
+}
+
+/* 칩 구매 버튼 */
+.buyBar {
+  margin: 24px 30px;
+  text-align: left;
+  display: flex;
+  justify-content: space-between;
+}
+.buyBar > p {
+  font-size: 15px;
+}
+.buyBar > button {
+  width: 65px;
+  height: 20px;
+  font-size: 13px;
+  border: 1px solid #dadada;
+  border-radius: 24px;
+  background-color: white;
+}
+hr {
+  border: 0px;
+  border-bottom: 1px solid rgba(224, 224, 224, 1);
+  margin: 0 30px;
+}
+.hr {
+  border-bottom: 1.5px solid rgba(224, 224, 224, 1);
+}

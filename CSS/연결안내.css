@@ -1,0 +1,33 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+.div{
+    width: 360px;
+    height: 780px;
+    background-color: #f2f2f2;
+
+    /* 실선 */
+    border: 1px solid black;
+}
+
+/* top */
+.top{
+    width: 100%;
+    height: 24px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.top > i{
+    padding: 0 6px;
+    font-size: 13px;
+}
+.top > p{
+    padding-right: 5px;
+    font-size: 14px;
+}

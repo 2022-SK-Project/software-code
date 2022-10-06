@@ -1,0 +1,79 @@
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="">
+    <title>QR scan test</title>
+
+    <style type="text/css">
+        main {
+            width: 100%;
+            height: 100%;
+            text-align: center;
+        }
+
+        div#frame {
+            border: 2px solid #005666;
+            background-color: #FFFFFF;
+            margin-left: 10px;
+            margin-right: 10px;
+            padding-left: 8px;
+            padding-right: 8px;
+            padding-top: 8px;
+            padding-bottom: 8px;
+        }
+
+        div#outputLayer {
+            text-align: left;
+        }
+
+        canvas {
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main_page">
+        <main align="center">
+            <div align="center">
+                <div></div>
+                <div id="frame">
+                    <div id="loadingMessage">
+                        🎥 비디오 스트림에 액세스 할 수 없습니다<br />웹캠이 활성화되어 있는지 확인하십시오
+                    </div>
+                    <canvas id="canvas"></canvas>
+                </div>
+            </div>
+
+            <br />
+            <input type="button" id="button1" onclick="openCamera();" value="카메라 열기" style="width:97%;height:30px" />
+            <br />
+            <div></div>
+            <div id="test" width="100%">
+                <h1>QR 코드 스캔 결과</h1>
+                <div id="output">
+                    <div id="outputMessage">
+
+                    </div>
+                    <div id="outputLayer" hidden>
+                        <span id="outputData"></span>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+</body>
+<script src="/JS/jsQR.js"></script>
+
+<script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+<!-- If you enabled Analytics in your project, add the Firebase SDK for Analytics -->
+<script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-analytics.js"></script>
+<!-- Add Firebase products that you want to use -->
+<script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-firestore.js"></script>
+<script src="/JS/jquery-3.6.0.min.js"></script>
+<script src="/JS/scaner.js"></script>
+</html>

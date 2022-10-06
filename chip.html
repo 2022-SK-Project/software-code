@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./CSS/chip.css">
+    <script src="https://kit.fontawesome.com/2d62f67ec1.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="div">
+        <!-- 제목 -->
+        <div class="mypage">
+            <a href="./mypage.html"><i class="fa-solid fa-angle-left"></i></a>
+            <h4>충전하기</h4>
+        </div>
+
+        <!-- 칩 개수-->
+        <div class="chip_box">
+            <img src="./IMG/coin.png" alt="">
+            <div class="chip">
+                <p>현재 보유칩</p>
+                <b class="coin_count">0</b>
+            </div>
+        </div>
+
+        <hr class="hr">
+
+        <!-- 칩 구매 버튼 -->
+        <div class="buyBar">
+            <p>온칩 <b>1</b>개</p>
+            <button onclick="kakaopay(300, 1)">300원</button>
+        </div>
+
+        <hr>
+
+        <div class="buyBar">
+            <p>온칩 <b>3</b>개</p>
+            <button onclick="kakaopay(900, 3)">900원</button>
+        </div>
+
+        <hr>
+
+        <div class="buyBar">
+            <p>온칩 <b>5</b>개</p>
+            <button onclick="kakaopay(1500, 5)">1,500원</button>
+        </div>
+
+        <hr>
+
+        <div class="buyBar">
+            <p>온칩 <b>10</b>개</p>
+            <button onclick="kakaopay(3000, 10)">3,000원</button>
+        </div>
+
+        <hr>
+
+        <div class="buyBar">
+            <p>온칩 <b>30</b>개</p>
+            <button onclick="kakaopay(9000, 30)">9,000원</button>
+        </div>
+
+        <hr>
+
+        <div class="buyBar">
+            <p>온칩 <b>50</b>개</p>
+            <button onclick="kakaopay(15000, 50)">15,000원</button>
+        </div>
+
+        <hr class="hr">
+    </div>
+
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+    <!-- If you enabled Analytics in your project, add the Firebase SDK for Analytics -->
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-analytics.js"></script>
+    <!-- Add Firebase products that you want to use -->
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-firestore.js"></script>
+    <script src="/JS/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="https://cdn.iamport.kr/js/iamport.payment-1.1.5.js"></script>
+    <script src="/JS/firebase.js"></script>
+</body>
+
+</html>

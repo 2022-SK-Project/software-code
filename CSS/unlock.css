@@ -1,0 +1,136 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+body{
+    background-color: rgb(244, 244, 244);
+}
+.div{
+    width: 100%;
+}
+
+/* header */
+header{
+    /* height: 87px; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 28px;
+    margin-bottom: 25px;
+}
+header > a > img{
+    width: 30px;
+    height: 30px;
+}
+.my_chip > a{
+    font-size: 18px;
+}
+.my_chip > a > img{
+    width: 24px;
+    height: 24px;
+}
+
+/* nav 문구 */
+nav{
+    margin: 0 0 33px 24px;
+    font-size: 24px;
+}
+/* section */
+section{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.chip-circle{
+    width: 235px;
+    height: 235px;
+    border-radius: 50%;
+    border-top: 2px solid #4F8BFF;
+    border-left: 2px solid #4F8BFF;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 24px;
+    box-shadow:inset 0px -10px 5px 0px #FFFFFF,inset 0px 10px 10px 0px #00000040;
+}
+.chip-circle > img{
+    width: 24px;
+    height: 24px;
+    margin-top: 50px;
+}
+.chip-circle > p{
+    font-size: 15;
+    color: #A1A1A1;
+    margin-top: 17px;
+}
+.chip-circle > b{
+    font-size: 72px;
+    color: #444444;
+}
+.blue-arrow{
+    width: 14px;
+    height: 14px;
+    margin-bottom: 11px;
+}
+section > p{
+    font-size: 16px;
+    color: #707070;
+}
+
+/* footer */
+.mySlides{
+    height: 100px;
+    border: 2px solid rgba(226, 226, 226, 1);
+    border-radius: 10px;
+    background-color: white;
+    margin: 67px 30px 0 30px;
+}
+.mySlides > p{
+    font-size: 18px;
+    float: left;
+    padding-left: 20px;
+    padding: 15px 0 0 24px;
+}
+.mySlides > img{
+    width: 100px;
+    height: 90px;
+    margin: 0 26px;
+    float: right;
+}
+
+/* 슬라이드 */
+/* #slider {
+    width: 100%;
+    height: 100%;
+
+    margin: 0 auto;
+    border: 10px solid transparent;
+    padding: 0px;
+
+    z-index: 100;
+    overflow: hidden;
+    white-space: nowrap;
+    box-sizing: border-box;
+  }
+#slider > li {
+    width: 100%;
+    height: 100%;
+
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+    font-size: 15px;
+    font-size: initial;
+    line-height: normal;
+    transition: all 0.3s cubic-bezier(0.3, 1.2, 0.65, 1);
+    
+    
+    background-size: cover;
+    vertical-align: top;
+    box-sizing: border-box;
+    white-space: normal;
+  } */

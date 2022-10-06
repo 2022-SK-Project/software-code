@@ -1,0 +1,108 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+/* .div{
+    height: 756px;
+} */
+.z-index {
+  width: 100%;
+  position: fixed;
+  text-align: center;
+  margin-bottom: 100px;
+}
+.zero {
+  padding-top: 20px;
+}
+/* top */
+.top {
+  width: 100%;
+  height: 24px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.top > i {
+  padding: 0 6px;
+  font-size: 13px;
+}
+.top > p {
+  padding-right: 5px;
+  font-size: 14px;
+}
+
+/* 마이페이지 */
+.mypage {
+  padding-bottom: 16px;
+  border-bottom: 2px solid rgb(244, 244, 244);
+  background-color: white;
+}
+.mypage > a > i {
+  float: left;
+  margin: 37px 0 0 37px;
+}
+h4 {
+  font-size: 20px;
+  padding: 32px 37px 0 0;
+}
+
+/* 결제, 구매 내역 */
+.breakdown {
+  height: 39px;
+  background-color: white;
+  padding-top: 14px;
+  margin-bottom: 28px;
+}
+.breakdown > a {
+  width: 180px;
+  height: 45px;
+  font-size: 17px;
+  padding: 0 54px;
+}
+#a {
+  border-bottom: 3px solid #fa5252;
+  padding-bottom: 14px;
+}
+
+/* 내역 */
+.div-box {
+  padding-bottom: 30px;
+  background-color: rgb(244, 244, 244);
+}
+.onchip {
+  padding: 5px 24px;
+  text-align: left;
+  background-color: rgb(244, 244, 244);
+}
+.onchip > p {
+  font-size: 12px;
+  margin: 0 0 13px 10px;
+}
+.coin {
+  background-color: white;
+  padding: 11px 15px 11px 7px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.coin-img {
+  width: 35px;
+  height: 35px;
+  margin-right: 9px;
+}
+.text-box > small {
+  font-size: 11px;
+  color: #b9b9b9;
+  margin-left: 2px;
+}
+.onchip-text {
+  font-size: 15px;
+}
+.onchip-text-1 {
+  font-size: 15px;
+  margin-left: 145px;
+}

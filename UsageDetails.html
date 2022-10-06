@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>사용내역</title>
+    <link rel="stylesheet" href="./CSS/UsageDetails.css">
+    <script src="https://kit.fontawesome.com/2d62f67ec1.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="div">
+        <div class="z-index">
+            <!-- 제목 -->
+            <div class="mypage">
+                <a href="./mypage.html"><i class="fa-solid fa-angle-left"></i></a>
+                <h4>구매내역</h4>
+            </div>
+
+            <div class="breakdown">
+                <a class="breakdown-a" href="./PaymentDetails.html">결제내역</a>
+                <a class="breakdown-a" id="a" href="./UsageDetails.html">사용내역</a>
+            </div>
+        </div>
+
+        
+    </div>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+    <!-- If you enabled Analytics in your project, add the Firebase SDK for Analytics -->
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-analytics.js"></script>
+    <!-- Add Firebase products that you want to use -->
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-firestore.js"></script>
+    <script src="/JS/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="https://cdn.iamport.kr/js/iamport.payment-1.1.5.js"></script>
+    <script src="/JS/UsageDetails.js"></script>
+</body>
+</html>

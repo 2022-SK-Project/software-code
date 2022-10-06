@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>로그인</title>
+    <link rel="stylesheet" href="./CSS/login.css">
+    <script src="https://kit.fontawesome.com/2d62f67ec1.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="div">
+        <h4>로그인</h4>
+
+        <form class="form" name="login" action="index.html" method="get">
+            <input class="input" type="text" maxlength="10" placeholder="아이디 입력" required autofocus><br>
+            <input class="input" type="password" maxlength="10" placeholder="비밀번호 입력" required><br>
+
+            <input class="submit" type="submit" value="로그인"><br>
+        </form>
+
+        <a href="#">아이디 찾기</a>
+        <small>|</small>
+        <a href="#">비밀번호 찾기</a>
+        <small>|</small>
+        <a href="#">회원가입</a>
+        
+        <div class="img-box">
+            <img src="./IMG/카카오톡.png" alt="">
+            <img src="./IMG/네이버.png" alt="">
+            <img src="./IMG/구글.png" alt="">
+        </div>
+    </div>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+    <!-- If you enabled Analytics in your project, add the Firebase SDK for Analytics -->
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-analytics.js"></script>
+    <!-- Add Firebase products that you want to use -->
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-firestore.js"></script>
+    <script src="/JS/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="https://cdn.iamport.kr/js/iamport.payment-1.1.5.js"></script>
+    <script src="/JS/firebase.js"></script>
+</body>
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>회원정보</title>
+    <link rel="stylesheet" href="./CSS/information.css">
+    <script src="https://kit.fontawesome.com/2d62f67ec1.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="div">
+        <!-- 제목 -->
+        <div class="mypage">
+            <a href="./mypage.html"><i class="fa-solid fa-angle-left"></i></a>
+            <h4>회원정보수정</h4>
+        </div>
+
+        <form action="./mypage.html" method="get">
+            <div class="box">
+                <small>이름</small>
+                <br>
+                <input type="text" maxlength="5" placeholder="이름을 입력해주세요." required>
+            </div>
+            
+            <div class="box">
+                <small>휴대폰 번호</small>
+                <br>
+                <input type="tel" maxlength="15" placeholder="휴대폰 번호를 입력해주세요." required>
+            </div>
+
+            <div class="box">
+                <small>주소</small>
+                <br>
+                <input type="text" maxlength="40" placeholder="주소을 입력해주세요." required>
+            </div>
+
+            <div class="box">
+                <small>환불계좌</small>
+                <br>
+                <input type="text" maxlength="40" placeholder="ex) 홍길동 (길동뱅크 0000-0000-0000-0)" required>
+            </div>
+
+            <div class="withdrawal">
+                <span>회원 정보를 삭제하시겠어요 ?</span>
+                <button>회원 탈퇴</button>
+            </div>
+
+            <input class="submit" type="submit" value="저장">
+        </form>
+    </div>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+    <!-- If you enabled Analytics in your project, add the Firebase SDK for Analytics -->
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-analytics.js"></script>
+    <!-- Add Firebase products that you want to use -->
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-firestore.js"></script>
+    <script src="/JS/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="https://cdn.iamport.kr/js/iamport.payment-1.1.5.js"></script>
+    <script src="/JS/firebase.js"></script>
+</body>
+</html>
